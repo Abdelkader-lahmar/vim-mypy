@@ -1,4 +1,4 @@
-function! ExecuteMypy()
+function! mypy#ExecuteMypy()
 	
 	" check if the current file is a python file
 	if &filetype != "python"
