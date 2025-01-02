@@ -8,7 +8,7 @@ function! mypy#ExecuteMypy()
 
 	" execute the mypy command with current file path
 	" and replace unexpected null characters with new line
-	let l:MypyOutput = substitute(system("mypy " . shellescape(expand("%:p"))), '\%x00', '\n', 'g')
+	let l:MypyOutput = substitute(system("mypy " . shellescape(expand("%:p"))), '^@', '\n', 'g')
 
 	" hundle the output
 	if v:shell_error
