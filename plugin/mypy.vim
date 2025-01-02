@@ -12,4 +12,4 @@ endif
 let g:loaded_mypy = 1
 
 " Exposes the plugin's functions for use as commands in Vim.
-command! Mypy call mypy#ExecuteMypy()
+command! Mypy call ExecuteMypy()
