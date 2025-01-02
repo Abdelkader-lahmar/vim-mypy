@@ -1,3 +1,3 @@
 function! mypy#ExecuteMypy()
-	execute "mypy " . bufname("%")
+	execute "!mypy " . bufname("%")
 endfunction
